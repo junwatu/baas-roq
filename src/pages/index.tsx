@@ -3,11 +3,11 @@ import { roqBrowserClient } from "@/lib/roq/roq-client";
 export default function Home() {
  
   const handleSignUp = async () => {
-    await roqBrowserClient.signUp('default', { postLoginRedirect: '/user' });
+    await roqBrowserClient.signUp('default', { postLoginRedirect: 'http://localhost:3000/user' });
   };
  
   const handleSignIn = async () => {
-    await roqBrowserClient.signIn('default', { postLoginRedirect: '/user' });
+    await roqBrowserClient.signIn('default', { postLoginRedirect: 'http://localhost:3000/user' });
   };
  
   return (
